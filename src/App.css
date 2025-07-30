@@ -1,0 +1,74 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: 5rem auto;
+}
+
+.box__form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.box__form-field:last-child {
+  margin-top: 2rem;
+}
+
+.box__form-field--input {
+  border: cornflowerblue 1px solid;
+  border-radius: 0.5rem;
+  height: 30px;
+  line-height: 28px;
+  margin: 5px 0;
+  font-size: 1rem;
+  padding: 0.25rem;
+}
+
+.box__books {
+  max-height: 300px;
+  overflow: auto;
+}
+
+.box__books--item {
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+}
+
+.box__books--item:hover {
+  background-color: cornflowerblue;
+  cursor: pointer;
+}
+
+.box__selected-item {
+  background-color: papayawhip;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: 1rem;
+  border: 1px solid peachpuff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.box__selected-item--item {
+  font-style: italic;
+  color: black;
+  cursor: pointer;
+}
+
+.box__selected-item--button {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 50px;
+  aspect-ratio: 1;
+}
+.box__selected-item--button:hover {
+  cursor: pointer;
+  background-color: peachpuff;
+}
